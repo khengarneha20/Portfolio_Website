@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Learn Java script
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <script src="learn.js"></script>
+      <script src="new.js"></script>
+</head>
+<script>
+
+
+</script>
+<style>
+    /* .test
+    {
+        height: 400px;
+        width: 500px;
+        background-color: cadetblue;  
+    } */
+    .btn{
+        height: 50px;
+        width: 400px;
+         background-color:blueviolet; 
+         color: black; 
+        margin-top: 30px;
+          font-size: 30px;
+          text-align: center;
+         
+    }
+    .pera{
+        text-align: center;
+         font-size: 40px; 
+         color: blue;
+         display: inline-block;
+         margin: 20px;
+    }
+    .headbtn{
+        height: 50px;
+         width: 300px; 
+         background-color: rgba(191, 200, 19, 0.732);
+          font-size: 20px;
+    }
+</style>
+<body>
+    <h1 class="pera" id = "txtchange">Java Script Learn</h1>
+     <button class="headbtn" onclick=f1()>Click here to change color</button>
+     <script>
+      function f1(){
+        document.getElementById('txtchange').style.backgroundColor='red';
+         }
+     </script>
+    
+<div class="container-fluid"  style="background-color: bisque;">
+        <div class="row justify-content-center pb-5">
+            
+   
+             <div class="col-3">
+                
+                <!-- <button name ="btn" class="btn" type="button" onclick='document.getElementById("demo").innerHTML = "Hello Neha"'> Click on me</button> -->
+                <button type="button" class="btn" onclick="document.getElementById('myimage').src='pic_bulbon.gif'"> Click here to turn on bulb</button>
+            </div>
+          
+
+            <div class="col-3 m-5 p-5">
+                <img src="pic_bulboff.gif" id ="myimage" style="width: 100px; align-items: center;  margin-left: 100px;"> 
+            </div>
+
+            <div class="col-3">
+                <button type="button" class="btn" onclick="document.getElementById('myimage').src='pic_bulboff.gif'"> Click here to turn Off bulb</button>
+            </div>
+         
+        </div>
+        <!--2nd container-->
+
+        <div class="row justify-content-center pb-5 bg-primary">
+            
+   
+          
+                <p>By using innerHTML </p>
+                <p id = "demo1" style="font-size: 20px; color: white;">Total of 5 + 9</p>
+                <button type="button" onclick="myfun()" class="btn">5 + 9 = ?</button>   
+                <p>By using document.write </p>
+                <button type="button" onclick="document.write(5+9)" class="btn">5 + 9 = ???</button>
+                <p>By using window alert </p>
+                <button type="button" onclick="window.alert(5 + 9)" class="btn">5 + 9 = ???</button>
+                
+            </div>
+            <div class="col-3 m-5">
+                <p style="font-size: 20px; color: white;">JavaScript Statements</p>
+                <p  id = "demo3"></p>
+                <script>
+                    // let a, b = 10 ,c;
+                    // a =+4;
+                    // c = a*b;
+                    // c--;
+                    // document.getElementById('demo3').innerHTML = "Sum" + "&nbsp" + c + "&nbsp" + "number"; 
+                    // alert(c);
+
+                    // let age = 18; 
+                    // let votercard = "yes"
+                    // if (age>=18 && votercard == 'no'){
+                    //     document.getElementById('demo3').innerHTML="You can vote" + age;
+                    // }
+                    // else
+                    // {
+                    //     document.getElementById('demo3').innerHTML="You can not vote" + age;
+                    // }
+
+                    // let age = 19 ;let hight  ;
+                    // let brevrage = age>=21 ? "Milk" :"alcohol";
+                    // document.write(brevrage ,"&nbsp", hight ?? "Not given hight ");
+
+                    let day = "Friday";
+
+                        if(day === "monday"){
+                            document.write("It's Monday");
+                        }
+                        else if(day === "Tuesday")
+                        {
+                            document.write("It's Tuesday");
+                        }
+                        else if(day === "Wednesday")
+                        {
+                            document.write("It's Wednesday");
+                        }
+                        else if(day === "Thurday")
+                        {
+                            document.write("It's Thurday");
+                        }
+                        else if(day === "Friday")
+                        {
+                            document.write("It's Friday");
+                        }
+                        else if(day === "saturday")
+                        {
+                            document.write("It's saturday");
+                        }
+                        else if(day === "Sunday")
+                        {
+                            document.write("It's Sunday");
+                        }
+               
+                        else {
+                            document.write("Wrong data ")
+                        }
+                </script>
+                 <p>Swich Statements</p>
+                 <script>
+                    switch("345340"){
+                        case "Monday" :
+                            document.write("It's Monday");
+                            break;
+                        case "Tuesday" :
+                            document.write("It's Tuesday");
+                            break;
+                        case "Wednesday" :
+                            document.write("It's Wednesday");
+                            break;
+                        case "0" :
+                        document.write("Wrong Input");
+                            break;
+
+                        default :
+                            document.write ("You are entering Wrong Days")
+
+
+                    }
+                 </script>
+                 <p>Loops</p>
+               <script>
+            
+
+                let counter = 3;
+                let sum = 0;
+                while(counter <= 20){
+                    if (counter % 2 == 0)
+                    {   
+                        sum = sum + counter;
+                    }
+                    counter++
+                  //  document.write(counter);
+                }
+                document.write(sum);
+               </script>
+               <br><br>
+               <script>
+                let for1;
+                for(for1 = 1; for1<= 10 ; for1++)
+                {
+                    document.write('woyce tech');
+                }
+                new Date().getDay()
+               </script> <br><br>
+               <p id = "demo"></p>
+               <script>
+               let i;
+                let text = "";
+                for( i = 3; i < 5; i++)
+                {
+                    text += "The number is "+ i + "<br>";
+                }
+               document.getElementById("demo").innerHTML = text;
+               </script><br><br>
+               <p id = "t1"></p>
+               <script>
+                const person = {fname:"Neha", lname : "Khengar" , age:"27"};
+                let t2 = "";
+                for(let x in person){
+                 t2 +=  person[x] + " ";
+                }
+                document.getElementById("demo").innerHTML = t2;
+               </script>
+            
+               <script>
+                    //  nested for loop
+                    // for (let num = 0 ; num <= 10; num++)
+                    // {
+                    //     // if(num == 2){
+                    //     //     document.write("Ending the loop");
+                    //     //     continue;
+                    //     // }
+                    //     document.write(num);
+                    //     document.write('<br>');
+                    //     for(let txt =0; txt < 2; txt++)
+                    //     {
+                           
+                    //         document.write('Neha Khengar');
+                    //         document.write('<br>');
+                    //     }                     
+                    // }
+                 
+                let obj = {"one" : 1 ,"two" : 2}
+                for (let n in obj){
+                    for (let m = 1; m <3 ; m++){
+                        document.write(m , n);
+                    }
+                }
+
+               </script>
+  
+            </div>
+
+            <!-- 3rd Div-->
+            <div class="col-3">
+                <p style="font-size: 20px; color: white;">Prompt</p>
+                <p style="font-size: 20px; color: rgb(126, 15, 15);">String functions</p>
+                    <script>
+ // Prompt---->>>                       
+                        // let age = prompt('Enter Your age', 35);
+                        // if (age != null){
+                        //     document.write(`Your age is ${age}`);
+                        // }
+                        // else
+                        // {
+                        //     document.write('Age field is blank');
+                        // }
+
+// Confirm pop up ---->>
+                    //    let response =  confirm("Are you sure want to delete this");
+                    //     if(response){
+                    //         document.write(" Your data has been deleted ")
+                    //     }
+                    //     else{
+                    //         document.write("You clicked on Cancel buttol")
+                    //     }
+
+// Type of ---->>
+                //          you have a 3445 in a value change the datatype
+
+               
+
+                let num = 2425435 ;
+                document.write(typeof(num));
+
+                let str = String(num);
+                document.write(str +'<br>'); 
+                document.write(Date().toString() );
+           </script> <br><br>
+           <!--String functions-->
+           <script>
+            let str1 = "Neha" , str2 = "Khengar" ,str3 = "Kamleshbhai"
+            let line = "This is Javascript learning from the tech gun tutorial"
+            let substring = line.substring(8);
+            let substr = line.substr(8 , 15);
+            let position = line.indexOf('the');
+            let lastposition = line.lastIndexOf('from');
+            let p1 = "5";
+           
+            
+            
+            
+            
+           //  let str3 = `Hi ${str1} ${str2}`;
+            document.write("Lenght of string of Neha" + " " + "::" + str1.length + "<br>"); 
+            document.write("5th character of khengar is "+ " " + "::" + str2[5]+ "<br>");
+            document.write("concatination function "+ "  " + "::" + str1.concat(" " ,str2, " " ,str3 ) + "<br>");
+            document.write("Substring function "+ "  " + "::" + substring+ "<br>");
+            document.write("Substr function "+ "  " + "::" + substr+ "<br>");
+            document.write("Index of function "+ "  " + "::" + position + "<br>");
+            document.write("Last Index of function "+ "  " + "::" + lastposition + "<br>");
+            document.write("charAt() function "+ "  " + "::" + str2.charAt(2) + "<br>");
+            document.write("charcodeAt() function "+ "  " + "::" + str2.charCodeAt(2) + "<br>");
+            document.write("At() function "+ "  " + "::" + str2.at(5) + "<br>");
+            document.write("Slice  function "+ "  " + "::" + line.slice(2,10) + "<br>");
+            document.write("Trim  function "+ "  " + "::" + line.trim() + "<br>");
+            document.write("Upper case  function "+ "  " + "::" + line.toUpperCase() + "<br>");
+            document.write("Lower case  function "+ "  " + "::" + line.toLocaleLowerCase() + "<br>");
+            document.write("Replace  function "+ "  " + "::" + line.replace('gun,','best') + "<br>");
+            document.write("Includes user for searching text  function "+ "  " + "::" + line.includes('learning')+ "<br>");
+            document.write("Pad Start function is used for put a given no. in the starting of the string "+ "  " + "::" + p1.padStart(4 , "0") + "<br>");
+            document.write("Pad End  function  used for put a given no. in the ending of the string"+ "  " + "::" + p1.padEnd(4 , "0") + "<br>");
+            document.write("Repeat function use for repeat a string"+ "  " + "::" + str1.repeat(4) + "<br>");
+//  Replce the text on clickon button
+           </script>
+            
+            <button onclick="myfun()">TRY IT</button>
+           <p id="t1">Please Visit Microsoft</p>
+           <script>
+            function myfun()
+            {
+                let t2 = document.getElementById("t1").innerHTML;
+                document.getElementById("t1").innerHTML = t2.replace(/MICROSOFT/i,"Woyce");
+            }
+           </script>
+
+        </div>
+
+  
+        </div>
+      <!--3 cols Done-->
+
+      
+      
+      <div class="row justify-content-center pb-5 bg-warning" style="height: auto; color: black;">
+            <div class="col-12">
+                <p style="font-size: 20px;">Array Learning</p><br>
+                <p id="ary"></p>
+                <script>
+                    // let cars = ["Bmw" ,"Tesla" , "Tiago" , "Aura" , "Swift","Exter"]
+                    // document.write(`cars is ${cars[2]}`);
+                    
+                    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+                                let fLen = fruits.length;
+
+                                let txt = "<ul>";
+                                for (let i = 0; i < fLen; i++) {
+                                txt += "<li>" + fruits[i] + "</li>";
+                                }
+                                txt += "</ul>";
+
+                                document.getElementById("ary").innerHTML = txt;
+
+                </script>
+
+
+                <!--Recognaizing Array-->
+                <script>
+                    const animal = ["Dog", "Cat", "Owl","Fox"];
+                    const plant = ["Meat" , "Milk","Insects" , "Red Meat"];
+                    let a = typeof(animal);
+                   document.write( Array.isArray(animal));
+                    document.write(a +  "<br>");
+                    //let Index = 1;
+                    let b = animal.at(-1);
+                    document.write(b + "<br>");
+                    document.write(animal.concat(plant));
+
+
+                </script>
+                <br><br>
+
+                <!--Multidiamention array-->
+                <script>
+                    const food = ["Dog", "Cat", "Owl","Fox"];
+                   document.write(food.with(2,"Cats"));
+                    const num1 = [40 ,50 , 60];
+                    const name = [
+                        ["math", "300" , "Ex"],
+                        ["science","200" , "Px"],
+                        ["SS" , "50" ,"da"]
+                    ];
+                    const str01 = "This is a string function we are using";
+                    let wordwrap = str01.split(' ');
+                    document.write(wordwrap);
+                    console.log(wordwrap);
+
+                    let abc = food.join('-');
+                    console.log(abc);
+                    document.write(abc);
+
+                   
+                    
+                    let plus = 0;
+                    num1.forEach(my)
+
+                    
+                    // function my(item , index , arr ){
+                    //    arr[index] =  item * 10; 
+                    // }
+                
+                    function my(item){
+                       
+                        plus += item;
+                    }
+                    document.write(plus)
+                 
+                </script>
+    <br><br>
+                <script>
+
+
+                    function mul(num)
+                    {
+                        for(let i =1 ; i<=10;i++)
+                        {
+                            document.write(`${num} x ${i} = ${num*i}`);
+                            document.write("<br>")
+                        }
+                    }
+
+                 mul(22);
+
+                 document.write("<br>")
+
+                 mul(54);
+
+                 document.write("<br>")
+                 document.write("Sum of 2 numbers via function" + "<br>")   
+                 function plus1(num1 , num2){
+                    document.write(`Sum of ${num1} and ${num2} = ${num1 + num2}`)
+                    document.write("<br>")
+                 }
+                 plus1(10,70 );       
+// Argument Object 
+           
+                function plus2(){
+                   console.log(arguments.length)
+                   if(arguments.length == 0){
+                    document.write("No Perameter available");
+                   }
+
+                   else{
+                    add = 0;
+                    for(let k = 0 ; k < arguments.length; k++){
+                        add = add + arguments[k]; 
+                    }
+                   } 
+                   document.write(`sum of above no. is ${add}`);
+               
+                }
+                let addition = plus2;
+                
+                addition(5, 6 , 4,4 ,35 ,6345, 465,645);
+
+            //    plus2(5, 6 , 4,4 ,35 ,6345, 465,645);
+
+
+        //   setTimeout( function () {
+        //     document.write("hello");
+        //   },3000);
+
+        //   (function(){
+        //     let jampo = "tertejufm"
+        //     console.log(jampo);
+        //     confirm(jampo);
+        //   })();
+
+                let company = {
+                    name : "Woyce",
+                    role : "Tester",
+                    salary : 5000 ,
+                    fn(){
+                      this.name + " " + this.role;
+                    }
+                };
+                document.write(company.fn());
+                
+               let e = new Date("2008,march, 5");
+               let y = new Date("2016 , april , 3");
+               if(e>y){
+                console.log("date is future");
+               }
+                else if(e<y){
+                    console.log("date is past");
+               }
+               else{
+                console.log("dates are same");
+               }
+
+               var shop = {
+                s_name: "Zudio",
+                s_add : "Rajkot",
+                s_state : "Gujrat",
+                getshop: function(){
+                    return this.s_state.toUpperCase();
+                }
+
+               };
+               console.log(shop.getshop());
+               
+                // Getter Setter //
+
+                const table ={
+                    t_n : "Table no. 21",
+                    t_detail : "Detail of the user is ",
+                    t_price : 3400,
+                     get gethome()
+                    {
+                       return this.t_detail.toLocaleUpperCase();
+                    }
+                }
+                document.write(table.gethome  + "<br>");
+
+                // Setter Funtion
+                var job = {
+                    jobname : "Tester",
+                    pincode : 304903,
+                    set setjob(n){
+                        this.jobname = n.toUpperCase();
+                    }
+                };
+                job.setjob="nehatergtrg";
+                document.write(job);
+
+//  Constructor Learning
+                // var family = {
+                //     f_name: "Neha khengar",
+                //     f_member : "daughter",
+                //     age : 30,    
+                // }
+
+                function Family(fname ,fmember ,fage){
+                    this.f_name = fname,
+                    this.f_member = fmember,
+                    this.age = fage
+
+                }
+
+                var family = new Family("jivu","son-in-low",34);
+                family.add = "rajkot"
+                var family2 = new Family("divu","in-low",64);
+                var family3 = new Family("mivu","son",24);
+                console.log(family);
+                console.log(family2);
+                console.log(family3);
+                
+
+// Nested Object 
+                var user = {
+                    name : "Neha",
+                    personalinfo : {
+                        add : "4-madhav vatika",
+                        contact : {
+                            lan : 6456456454,
+
+
+                        }
+                    }
+                }   
+                console.log(user.personalinfo.contact);             
+
+
+                
+                </script>
+
+
+
+
+            </div>
+   
+        </div>
+        <div class="row justify-content-center pb-5 bg-primary" style="height: auto; color: black;">
+            <p id = "1">Helllo</p>
+            <p class = "123">Hiii</p>
+            <p>This is </p>
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3 name = "t2">H3</h3>
+            <input type="button" name = "btn" value="Submit me ">
+
+<!--JAva script-->
+            <script>
+                document.getElementById('1').innerHTML = "Javascript";
+                var n = document.getElementsByClassName('123');
+                for(let i = 0; i<n.length;i++){
+                   n[i].style.backgroundColor = "red";
+                  
+                }
+                var m = document.getElementsByTagName('h1');
+                for(let j =0;j<m.length;j++){
+                    m[j].style.backgroundColor = "yellow";
+                    m[j].style.fontSize = "45px"
+                }
+
+             document.getElementsByName('btn').innerHTML= "Changed text"; 
+            </script>
+
+        </div>
+        <div class="row justify-content-center pb-5 bg-secondary" style="height: auto; color: black;">
+
+            <!-- <p class="intro">Hello!! This is Query Selector testing</p>
+
+                <div>
+                    <h1 class="intro"> Testing User</h1>
+                    <h4 class="intro">This is testing by neha</h4>
+                </div>
+            <p  class="intro"> Okay !! Fine then  good</p>
+            <h4> I am fine well</h4>
+            <p  class="intro">Okay TEst </p> <br><br>
+
+            <script>
+            var elm = document.querySelectorAll("p.intro");
+            console.log(elm);
+
+            for(let k = 0;k<elm.length;k++){
+                elm[k].innerHTML="<h1>Hello</h1";
+            
+                }    
+
+            </script> -->
+<h1>Append Child</h2>
+    <p id = exm>This is example peragraph</p>
+    <script>
+       let ab =  document.getElementById('exm'); 
+       let h1 = document.createElement('h1');
+        h1.className = "try";
+     let h2= document.createTextNode("This is Append example")
+
+        h1.append(h2);
+       ab.appendChild(h1);
+    </script>
+
+    <h2 id = "exm1">My System is ABCD</h2>
+    <script>
+        let exm1 =  document.getElementById('exm1');
+        let m = document.createElement('h1');
+        let n = document.createTextNode("Thsirwierfgvf rgfdkfgvfdg gfkgfd fdgbfg bkfg hbk fgfjbkfdbkfg bkgfd hbifthgkgfh kgfh k")
+        m.append(n)
+        exm1.appendChild(m);
+
+    </script>
+    
+
+    <ul id = "omg">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+
+        let list = document.getElementById('omg');
+       let clone =  list.cloneNode(true);
+       clone.className = "myidentifire"
+      // console.log(clone)
+      document.body.appendChild(clone);
+
+        //  let omg =   document.getElementById('omg');
+        //  let item = document.createElement('li');
+        //  item.textContent = "New item list 4";
+        //  //omg.appendChild(item);
+        //  let pos = omg.firstElementChild;
+        //  let pos1 = omg.firstElementChild.nextElementSibling.nextElementSibling;
+        // omg.insertBefore(item,pos);
+        // omg.insertBefore(item,pos1);
+
+        // let op = document.body;
+        // let head = document.createElement('h1')
+        // head.textContent = "JIVan Hi JAl ha ";
+        // let ls = document.getElementById('omg');
+        // op.insertBefore(head,ls);
+
+    </script>
+
+
+
+
+
+
+
+
+            <br><br>
+     <p><h1>This is  Child Relation </h1></p>
+            <ul>
+                <li id="test">Test 1</li>
+                <li>Test 2</li>
+                <li>Test 3</li>
+            </ul>
+            <ul>
+                <li>Test 1</li>
+                <li>Test 2</li>
+                <li>Test 3</li>
+            </ul>
+           <script>
+         let l=   document.getElementById('test')
+            console.log(l);
+          let h =   l.parentElement;
+          
+          
+        h.innerHTML = "hello";
+         console.log(h);
+           </script>
+ <p><h1>This is Parent  Relation </h1></p>
+ <ul id = "item">
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+</ul>
+<script>
+    let temp = document.getElementById('item')
+    console.log(temp);
+   let u =  temp.firstElementChild;
+   u.innerHTML = "First Element";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    <!--Container end-->
+    </div>
+
+  
+  
+</body>
+</html>

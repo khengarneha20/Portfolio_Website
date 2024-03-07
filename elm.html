@@ -1,0 +1,102 @@
+<html>
+    <head>
+     <title>JAVA</title>
+     <style>
+      .div1{
+        background-color: black;
+        height: 2000px;
+        text-align: center;
+      }
+      .dim{
+        color: white;
+      }
+      .div2{
+        background-color: rgb(90, 6, 6);
+        height: 100px;
+        width: 100px;
+        text-align: center;
+      }
+     </style>
+    </head>
+  <body>
+    <div id = "box" class="div1 dim">
+      <h1>This is Dummy Text </h1>
+      <input type="text" id = "textfield"> 
+      <button id = "btn" name="btn">Click on me</button>
+      <input type="text" id = "textfield2"  onchange="change()"> 
+      <button name="btn2" id = "btn2">Redirect to Google</button>
+      <button name ="btn3" id ="btn3">Reload the page</button>
+      <h1 id = "h1">hi </h1>
+    </div>
+
+    <script>
+
+  //  let btn =    document.getElementById('btn')
+  //  btn.addEventListener("click",function()
+  //   {
+  //     alert("clicked on me");
+  //   });
+
+    let txt = document.getElementById('textfield');
+    txt.addEventListener("keypress", function(){
+      document.write("You Pressed a Ky");
+    }
+    )
+
+    window.addEventListener("wheel",function(){
+      console.log("Scrolling..........");
+    })
+
+  let ab = document.getElementById('textfield2')
+  // function n(){
+  //       ab.style.background = "red"
+  // }
+    function change(){
+      document.write(ab.value);
+      console.log(ab.value);
+    }
+
+    let t4 = document.getElementById('btn');
+
+    t4.addEventListener("click",function(){
+
+      setTimeout(fn,3000)
+      console.log("clicked")
+
+            function fn(){
+              alert("msg")
+            }
+        
+
+    })
+
+    let btn2 = document.getElementById('btn2')
+
+    btn2.addEventListener("click", function(){
+     // window.location = "https://www.google.com/";
+     location.assign("https://www.google.com/");
+
+    })
+    let btn3 = document.getElementById('btn3')
+
+          btn3.addEventListener("click", function(){
+          // window.location = "https://www.google.com/";
+          location.reload();
+
+          })
+
+    
+      let nb =  navigator.appName;
+          console.log(nb);
+      let nb1 =  navigator.appCodeName;
+          console.log(nb1);
+      let nb2 =  navigator.appVersion;
+          console.log(nb2);
+    //  let nb3 = navigator.
+
+        console.log(screen.width)
+
+    </script>
+
+</body>
+</html>
