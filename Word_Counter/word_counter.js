@@ -6,7 +6,7 @@ textbox.addEventListener('input' , function(){
     let char =  text.length;
     document.getElementById('t1').innerHTML = char;
 
-    text =text.trim();  // that removed the space
+    text =text.trim();  // that removes white space 
 
 // Word counter 
    let words = text.split(" ")  // that break the words when found space
