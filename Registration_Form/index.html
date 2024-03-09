@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>
+           Registration Form
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="validate.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="row justify-content-evenly"> 
+                
+                <div class="col-sm-8">
+                    <form action="#">
+                        <div class="scheduler-border">
+                          <legend class="scheduler-border text-center">Employee Registration Form</legend>
+                          <h5>
+                            <strong>Member Information</strong>
+                          </h5>
+                          <div class="row justify-content-center">
+                            <p>Full name</p>
+                            <div class="col-6">
+                                <input type="text" id = "fname" class="fname" placeholder="Enter First Name" autocomplete="given-name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" id = "lname" class="fname" placeholder="Enter Last Name"  autocomplete="given-name">
+                            </div>
+                          </div>
+                          <div class="row justify-content-center">
+                            <p> What is your address ?</p>
+                            <div class="col-12">
+                                    
+                              
+                                
+                                <input type="text" id = "address1" class="add1" placeholder="Address" autocomplete="address-line1">
+                                <input type="text" id = "address2" class="add2" placeholder="Address line 2"  autocomplete="address-line2">
+                            </div>
+                           
+                            <div class="col-3">
+                                <input type="text" id = "city" class="city" placeholder="City" autocomplete="on">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" id = "state" class="state" placeholder="State" autocomplete="on">
+                            </div>
+                            <div class="col-2">
+                                <input type="text" id = "postal" class="postal" placeholder="Code" autocomplete="on">
+                            </div>
+                            <div class="col-4">
+                                <select id = "country" name = "country">
+                                    <option value="" disabled selected hidden>Select Country</option>
+                                    <option value="India">India</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                </select> 
+                            </div>
+
+                          </div>
+                          <div class="row justify-content-center">
+                            <p>Phone Number</p>
+                            <div class="col-12">
+                                    <input type="tel" id = "tel" class="telecom" placeholder="Enter Phone no."> 
+                            </div>
+                            <p>Email Address</p>
+                            <div class="col-12">
+                                    <input type="email" id = "email" class="eml" placeholder="Enter Email"> 
+                            </div>
+                          </div>
+                          <div class="row justify-content-center">
+
+                           <p>Select Your Membership Level</p>
+                           <h3>Choose Gender</h3>
+                                <div class="col-12" id = "rd">
+                                    <label>Male
+                                        <input type="radio" checked="checked" name="radio" id ="male">
+                                    </label> 
+                                    </div>
+                                    <div class="col-12" id = "rd">
+                                    <label>Female
+                                        <input type="radio" name="radio" id = "Female">
+                                    </label>
+                                    </div>  
+                            </div>
+                            <div class="row justify-content-center">
+                                <h3>Experience</h3>
+                                     <div class="col-12" id = "rd">
+                                         <label> 0 to 2 Year
+                                             <input type="radio" checked="checked" name="0to2" id ="0to2">
+                                         </label> 
+                                      </div>
+                                      <div class="col-12" id = "rd">
+                                         <label>2 to 5 Year
+                                             <input type="radio" name="2to5" id = "2to5">
+                                         </label>
+                                      </div>  
+                                      <div class="col-12" id = "rd">
+                                        <label>Above 5 Yeat
+                                            <input type="radio" name="5year" id = "5year">
+                                        </label>
+                                     </div>  
+                            </div>
+                              
+
+                          
+                          
+                        </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--3rd column-->
+                <div class="col-sm-2"></div>
+              </div>
+
+
+
+
+        </div>
+
+
+    </body>
+</html>

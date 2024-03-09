@@ -1,0 +1,67 @@
+body{
+    background-image: url(5053309.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: white;
+    font-size: 20;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+
+}
+input[type=text], input[type=tel], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    height: 50px;
+    border-radius: 20px 10px 20px 10px;
+    font-size: 15px;
+}
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    height: 50px;
+    border-radius: 20px 10px 20px 10px;
+    font-size: 15px;
+}
+
+.icon {
+   
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+    #rd{
+        
+        height: 50px;
+        width: 96%;
+        padding: 12px 20px;
+        margin: 2 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        transition: 0.5s;
+        outline: none;
+        height: 50px;
+        border-radius: 20px 10px 20px 10px;
+        font-size: 15px;
+        background-color: white;
+        color: black;
+    };
