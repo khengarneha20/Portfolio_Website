@@ -19,4 +19,18 @@ textbox.addEventListener('input' , function(){
    document.getElementById('w1').innerHTML = clinlist.length;
 })
 
+function changeBG(color){
+    document.body.style.backgroundColor  = color;
+    let bg = document.getElementById('bg');
+
+    if(color == "black")
+    {
+       bg.style.color = "white";
+    }
+    else{
+        bg.style.color = "black";
+    }
+
+}
+
 
