@@ -11,7 +11,7 @@ textbox.addEventListener('input' , function(){
 // Word counter 
    let words = text.split(" ")  // that break the words when found space
 
-   let clinlist = words.filter(function (elm){   // clinelist etle use kryu jyare spce apta ta ene counts ganta hta
+   let clinlist = words.filter(function (elm){   // clinelist etle use kryu jyare spce apta ta space counts ganta hta
     return elm != "" ;  // removes empty element from array so , get proper count reduce spaced during count words
    
    })
