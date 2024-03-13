@@ -26,7 +26,23 @@
         document.write(`Subtraction ${sub}` + "<br>")
         document.write(`Multiplication ${mul}` + "<br>")
         document.write(`Division ${div}` )
-        
-       
+          
+    </script>
+
+    <p>Nested array</p>
+    <script>
+        let array1 = [10,20,30]
+        let array2 = [1 , 2 ,3,  4,5,...array1]
+      
+        let [first,second] = array2
+        console.log(first)
+
+        let person = {
+            name : "Neha",
+            age : "27",
+            surname :"Khengar"
+        }
+       let{name , age , surname} = person;
+        console.log(surname);
     </script>
 </html>
