@@ -45,4 +45,56 @@
        let{name , age , surname} = person;
         console.log(surname);
     </script>
+    <p><h1>Arrow function</h1></p>
+    <!-- <script>
+
+        function fun(a,b){
+
+            return a + b +100;
+        }
+      let result =  fun(3,4)
+        console.log(result);
+
+
+    </script> -->
+   <script>
+
+  const fun = (a,b) =>  a + b + 100;
+    
+   
+     let result =  fun(3,4)
+    console.log(result);
+
+    // function sayhello(){
+    //     console.log("hello");
+    // }
+    // sayhello();
+
+    // const sayhello = () => console.log("Gello")
+    //     sayhello();
+
+const func2 = (x, y) => {
+  return x + y;
+};
+let result1 = func2(100,200)
+console.log(result1)
+
+const car = () => ({name:'Jiva' , price : '10k'});
+console.log(car().price);
+</script>
+
+<script>
+    class employee{
+        constructor(){
+            console.log("start calling consturctor");
+        }
+    }
+    const emp = new employee();
+    class manager extends employee{
+
+    }
+    const mng = new manager();
+    console.log(mng);
+</script>
+
 </html>
