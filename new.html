@@ -85,16 +85,25 @@ console.log(car().price);
 
 <script>
     class employee{
-        constructor(){
+        constructor(n){
+            this.name = n;
             console.log("start calling consturctor");
         }
     }
     const emp = new employee();
     class manager extends employee{
+        constructor(n , dep){   //super class cunstructor we need to call
+            super(n);
+            this.department = dep
+        }
+
+        info(){
+          console.log(this.name + "is manager of department" + " " + this.department);
+        }
 
     }
-    const mng = new manager();
-    console.log(mng);
+    const mng = new manager("NEHA KHENGAR","TESTING");
+    console.log(mng.info());
 </script>
 
 </html>
