@@ -98,12 +98,99 @@ console.log(car().price);
         }
 
         info(){
-          console.log(this.name + "is manager of department" + " " + this.department);
+          console.log(this.name + " " + "is manager of department" + " " + this.department);
         }
 
     }
-    const mng = new manager("NEHA KHENGAR","TESTING");
-    console.log(mng.info());
+
+    class admin extends manager{
+
+    }
+
+    const adm = new admin("NEHA KHENGAR","TESTING");
+    console.log(adm.info());
 </script>
+<p>public and privet property</p>
+<script>
+    // class student{
+    //     constructor(sname){
+    //        this.fullname = sname;
+    //     }
+    //     getname(){
+    //         console.log(this.fullname);
+    //     }
+    // }
+
+    // const std = new student("Woyce Technology");
+    // console.log(std.fullname);
+
+
+    let objectmethod = {
+        setname(){
+                console.log("Hii")
+        },
+        getname(){
+            console.log("Hello")
+        }
+    };
+
+    class name21 {
+        constructor(){
+            this.bnm = "Jerry jigs"
+        }
+
+    }
+
+    Object.assign(name21.prototype,objectmethod);  // This is use for mixin method call for object or properties from enywhere else
+
+    let nm = new name21();
+    console.log(nm);
+
+    let random = (number) => console.log(Math.sqrt(number));
+    console.log(random(6));
+
+    // document.addEventListener('click',function(){
+    //     console.log("clicked");
+    // })
+    document.addEventListener('click',() => console.log("now clicked"));
+    
+</script>
+<h1 id = "demo">Callback function</h1>
+<p id = time></p>
+<script>
+
+    // Set timeout
+    setTimeout(myfun,3000);
+
+                        function myfun(){
+                        document.getElementById('demo').innerHTML = "Hiiii Thhis is Timeout Function"
+                        }
+
+     // Set interval 
+     setInterval(interval ,1000);
+
+     function interval(){
+        let d = new Date();
+        document.getElementById('time').innerHTML = 
+       
+        d.getHours() + ":" +
+        d.getMinutes() +":"+
+        d.getSeconds();
+     }
+    
+
+    function saybye(){
+        console.log("Okay BYe bye..........")
+    }
+    saybye();
+    function minus(a,b ,callback){
+       let  res =  a-b;
+        callback();
+        console.log(res)
+    }
+    console.log(minus(60,9,saybye));
+    console.log(minus(64,9,saybye));
+</script>
+
 
 </html>
