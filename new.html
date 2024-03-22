@@ -190,6 +190,29 @@ console.log(car().price);
     }
     console.log(minus(60,9,saybye));
     console.log(minus(64,9,saybye));
+
+
+    // MAP Function    --- This is example of simple array 
+    let arr = [2,3,4,5,6];
+    let arr2 = [];
+    for(let i = 0; i<arr.length; i++){
+        arr2[i] = arr[i] * 2;   
+    }
+    document.write("Using simple function" + " " +arr2  + "<br>" )
+        // USING MAP function................
+    let arr3 = [3, 4,5,6,7];
+
+    let arr4 = arr3.map(function(val){
+            return val * 3;
+    });
+    document.write("Using map function" + " " +arr4  + "<br>")
+
+    // Through a arrow function 
+
+    let arr5 = arr3.map(val =>  val * 5);
+
+document.write("Using map function" + " " +arr5)
+
 </script>
 
 

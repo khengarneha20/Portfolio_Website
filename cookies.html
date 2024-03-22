@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Cookies Learning</title>
+    </head>
+    <body>
+        <h1 id="demo">Cookies Learning</h1>
+
+
+<!--Cookies -->
+        <script>
+            // let elm = document.getElementById('demo');
+            
+            // elm.innerHTML = "Hello Cookies"
+            // elm.style.color = "red";
+
+            // document.cookie = "name = khengar , neha; expires = Sat, 22 Mar 2024 12:00:00 UTC";
+            // document.cookie = "location = india";
+            // let cook = document.cookie;
+            // alert(cook)
+     </script>
+<!--LOcation and session storage -->
+     <script>
+        // For set the item in local storage 
+        localStorage.setItem('name','Neha khengar');
+        localStorage.setItem('location','Delhi');
+        localStorage.setItem('work','Tester');
+
+        // For get the item in local storage 
+
+        let si = localStorage.getItem('name');
+        let gi = localStorage.getItem('location');
+        console.log(si);
+        console.log(gi);
+
+        // Remove local storage 
+
+        localStorage.removeItem('work');
+
+
+
+     </script>
+
+     <!--Session Storage -->
+
+<script>
+                sessionStorage.setItem('name' , 'jeeya');
+
+                sessionStorage.setItem('compny_name', 'Woyce' )
+
+                let m = sessionStorage.getItem('name');
+                console.log(m);
+
+                sessionStorage.removeItem('name')
+</script>
+
+    </body>
+    
+</html>
+
+
